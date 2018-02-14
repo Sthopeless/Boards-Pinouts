@@ -1,4 +1,4 @@
-cd /home/ripat/Documents/Github/esp-pinout/
+cd /home/esp-pinout/
 git add .
 git checkout -b upload
 git commit -m "$1"
