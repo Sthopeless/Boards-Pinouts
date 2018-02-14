@@ -1,0 +1,14 @@
+homeassistant:
+  customize:
+    switch.esp01_relay_001:
+      friendly_name: {{NEW NAME}}
+      icon: mdi:{ICON-NAME}
+      
+switch:
+  - platform: mqtt
+    name: "esp01_relay_001"
+    state_topic: "/ESP01-Relay/state/"
+    command_topic: "/ESP01-Relay/command/"
+    payload_on: "ON"
+    payload_off: "OFF"
+    retain: true
